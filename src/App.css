@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body,#root{
+  max-height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  height: 100%;
+  background-color: rgb(217, 221, 237);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header{
+  background-color: #262C7C !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.app__footer{
+  background-color: #262C7C !important;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__header img,.app__header h6 {
+  padding-left: 25px;
+}
+
+.app__main{
+  background-color: #262C7C !important;
+  height: 450px;
+  width: 100%;
+  border-top: 0.1px solid rgb(114, 113, 113);
+  display: flex;
+}
+
+.app__main img{
+  margin-top: 25px;
+  height: 300px;
+}
+
+.app__main__info{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app__main__info__stats{
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  bottom: 50px;
+}
+
+.app__main__info__card{
+  margin-top: 50px;
+  width:350px;
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.statsInfo{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+}
+
+.statsInfo__card{
+  max-width: 250px;
+  box-shadow: none !important;
+}
+
+.statsInfo__cardContent{
+  display: flex;
+}
+
+.statsInfo__form{
+  margin-top: none !important;
+}
+
+.statsInfo__select,.statsInfo__typo{
+  margin-left: 20px !important;
+  margin-top: 0 !important;
+  color: #262C7C !important;
+}
+
+.statsInfo__input{
+  margin-left:20px !important;
+  position: relative !important;
+  color: #262C7C !important;
+}
+
+.numLabel{
+  text-align: left !important;
+}
+
+.numLabelTable{
+  text-align: right !important;
+}
+
+.app__info__data{
+  display: flex;
+  justify-content: space-around;
+}
+
+.app__info_data__map{
+  width: 60%;
+  margin-left:100px;
+  margin-right:20px;
+}
+
+.app__info_data__list{
+  width: 40%;
+  margin-left:20px;
+  margin-right:100px;
+}
+
+.app__info_data__list__card{
+  height: 650px;
+  overflow: scroll !important;
+}
+
+.app__info_data__map__card{
+  height: 650px;
+  /* overflow: scroll !important; */
+}
+
+.countryTable{
+  margin-top:20px;
+}
+
+.countryTable__list{
+  background-color: rgb(217, 221, 237);
+  border-radius: 5px;
+  margin: 10px !important;
+  margin-top: 20px;
+  padding-top: none !important;
+  padding-bottom: none !important;
+}
+
+.map{
+  height: 550px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+}
+
+.map .leaflet-container{
+  height: 100%;
+}
+
+.map__name img{
+  width: 100px;
+  border-radius: 5px;
+}
+
+.map__name {
+  height: 80px;
+  width: 100px;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.map__countryName{
+  font-weight: bold;
+}
+
+.map__case,.map__death,.map__recovered{
+  font-size:12px;
+  margin-top: 5px;
 }
