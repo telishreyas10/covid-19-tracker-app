@@ -2,12 +2,12 @@ Covid 19 cases tracker
 
 An application used to track covid cases around the world, built with React, Redux, JavaScript, and CSS.
 
-Project Screen Shot(s)
+Project Screen Shot(s):
+
 https://ibb.co/LQCj9xJ
 
 https://ibb.co/SRP1qb1
 
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
 
 Installation and Setup Instructions
 Example:
